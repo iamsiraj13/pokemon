@@ -20,10 +20,10 @@ const Pokemon = ({ pokemon }) => {
         <p>{stat.stat.name}</p>
         <div
           key={index}
-          className="bg-[#D9D9D9] w-full   rounded  h-[5px] relative"
+          className="bg-[#D9D9D9] w-full mb-2   rounded  h-[5px] relative"
         >
           <div
-            className="bg-[#30A7D7] rounded px-2 h-[5px] absolute left-0 top-0"
+            className="bg-[#30A7D7] rounded px-2 h-[5px] absolute left-0 top-0 "
             style={{ width: `${stat.base_stat}%` }}
           >
             {/* {stat.base_stat} */}
@@ -50,6 +50,14 @@ const Pokemon = ({ pokemon }) => {
               adipisci placeat culpa itaque deserunt quae sequi, accusamus
               molestiae dolorum ea.
             </p>
+            <div className="w-full h-[200] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 mt-10 rounder-sm">
+              <div className="bg-white p-4">
+                <ul className="text-black">
+                  <li>Height: {pokemon.height}</li>
+                  <li>weight: {pokemon.weight}</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="w-[40%]">
             <Image
@@ -61,9 +69,9 @@ const Pokemon = ({ pokemon }) => {
           </div>
           <div className="w-[30%]">
             <div className=" text-black rounded p-5">
-              <h2>Types</h2>
+              <h2 className="mb-4">Types</h2>
               <ul className="flex gap-5">{renderTypes()}</ul>
-              <div>{renderStats()}</div>
+              <div className="mt-10">{renderStats()}</div>
             </div>
           </div>
 

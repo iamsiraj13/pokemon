@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import { useState } from "react";
 import Pokemon from "../components/Pokemon";
+import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 export default function Home({ initialPokemon }) {
   const [pokemon, setPokemon] = useState(initialPokemon);
@@ -25,17 +26,17 @@ export default function Home({ initialPokemon }) {
       <div className="mt-10 flex justify-center gap-5">
         <button
           disabled={!pokemon.previous}
-          className="disabled:bg-gray-500 px-3 py-1 bg-slate-900"
+          className="disabled:bg-gray-500 px-3 py-2 bg-slate-900 text-white"
           onClick={() => fetchPokemon(pokemon.previous, false)}
         >
-          prev
+          Prev
         </button>
         <button
           disabled={!pokemon.next}
-          className="disabled:bg-gray-500 px-3 py-1 bg-slate-900"
+          className="disabled:bg-gray-500 px-3 py-2 text-white bg-slate-900"
           onClick={() => fetchPokemon(pokemon.next, true)}
         >
-          next
+          Next
         </button>
       </div>
     </Layout>

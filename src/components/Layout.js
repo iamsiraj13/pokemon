@@ -4,6 +4,11 @@ import Link from "next/link";
 import logo from "../../public/assets/img/Logo.png";
 import Image from "next/image";
 import bgimg from "../../public/assets/img/Background.png";
+import img1 from "../../public/assets/img/Image01.png";
+import img2 from "../../public/assets/img/Image02.png";
+import img3 from "../../public/assets/img/Image03.png";
+import img4 from "../../public/assets/img/Image04.png";
+import img5 from "../../public/assets/img/Image05.png";
 
 const Layout = ({ children, title }) => {
   return (
@@ -15,7 +20,7 @@ const Layout = ({ children, title }) => {
       </Head>
 
       <main className="mx-auto">
-        <div className="banner xl:container px-32 ">
+        <div className="banner xl:container px-32 py-4">
           <header className=" py-10 mb-10">
             <Link href="/">
               <div className="flex justify-center">
@@ -24,6 +29,97 @@ const Layout = ({ children, title }) => {
             </Link>
           </header>
           {children}
+        </div>
+        <div className="content container px-4 py-5">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="row">
+                <div className="col-md-8">
+                  <p className="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque maxime unde dolor rem, nobis odit ullam quos commodi
+                    repudiandae numquam. Corrupti, voluptatum! Dolores nulla
+                    cumque et labore provident. Tempora, illo!
+                  </p>
+                  <div className="row">
+                    <div className="col-md-8">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quis omnis excepturi beatae esse, voluptates
+                        voluptate libero hic inventore harum officia!
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <Image src={img3} alt=".." />
+                    </div>
+                  </div>
+                  <p className="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere praesentium voluptate odio dolor neque voluptatem
+                    enim odit, ea nesciunt qui. Eius placeat in totam vero quasi
+                    voluptate dolorem corrupti quo.
+                  </p>
+                </div>
+                <div className="col-md-4">
+                  <div>
+                    <Image src={img1} className="mb-3" alt=".." />
+                  </div>
+                  <div>
+                    <Image src={img2} alt=".." />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusamus eaque mollitia suscipit eligendi minus, illum magni,
+                veniam fugiat porro explicabo vero enim. Modi consequatur odio
+                eaque quasi possimus pariatur facilis voluptatem eos, quis
+                delectus harum in facere libero asperiores illum fugit sapiente
+                et esse rem fuga voluptatum est nihil.
+              </p>
+            </div>
+            <div className="col-md-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                deserunt ab. Saepe sed qui neque tenetur officiis earum,
+                reiciendis a laudantium suscipit, repellat quibusdam incidunt
+                quam inventore odio quaerat aperiam.
+              </p>
+              <div className="row">
+                <div className="col-md-4">
+                  <Image src={img4} alt=".." />
+                </div>
+                <div className="col-md-8">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus quidem suscipit enim mollitia voluptatem, quia
+                    temporibus in numquam officiis hic eum perferendis ipsam
+                    minima totam quos fugit, assumenda placeat facere?
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4">
+                  <Image src={img4} alt=".." />
+                </div>
+                <div className="col-md-8">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus quidem suscipit enim mollitia voluptatem, quia
+                    temporibus in numquam officiis hic eum perferendis ipsam
+                    minima totam quos fugit, assumenda placeat facere?
+                  </p>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit laboriosam officia modi placeat voluptatibus vel! Facere
+                placeat, optio neque veritatis aliquid facilis est corrupti vel
+                deserunt sed reprehenderit. Numquam dolorum id saepe fugiat
+                blanditiis explicabo inventore tenetur aliquam ab quidem?
+              </p>
+            </div>
+          </div>
         </div>
       </main>
     </div>

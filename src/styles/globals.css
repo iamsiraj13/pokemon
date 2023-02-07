@@ -35,6 +35,9 @@
   font-family: ubuntu;
 }
 
+a{
+  text-decoration: none !important;
+}
 @layer base {
   body {
       @apply bg-slate-700 text-white;
