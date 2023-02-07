@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-BoldItalic.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-Italic.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-Light.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-LightItalic.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family:"ubuntu";
+  src: url('../../public/font/Ubuntu-Regular.ttf');
+}
+
+*{
+  font-family: ubuntu;
+}
+
+@layer base {
+  body {
+      @apply bg-slate-700 text-white;
+  }
+}
+.banner{
+  background-image: url('../../public/assets/img/Background.png');
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+}
